@@ -25,7 +25,7 @@ The release covers 22 module-presentations. The analysis uses nineteen of them. 
 
 ## Running
 
-1. Install the packages in `requirements.txt` (Python 3.12).
+1. Install the packages in `requirements.txt` (Python 3.13; the reported runs used 3.13.16 and 3.13.15 on Google Colab, CPU only).
 2. Put the OULAD files in `raw/`.
 3. Run the notebooks in numeric order, from the repository root or any folder inside it. Each notebook finds the root by looking for `raw/`, and writes derived files there.
 
