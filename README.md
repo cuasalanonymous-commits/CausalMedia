@@ -10,7 +10,7 @@ Code for an anonymous manuscript under review. The study estimates heterogeneous
 | `02_benchmark` | `02_ihdp_benchmark.ipynb` | Runs the benchmark with known ground truth (100 realisations) |
 | `03_causal_structure` | `dag.png` | Causal graph used for confounder selection |
 | `04_estimation` | `04_estimation.ipynb` | Fits the causal forest and the baseline estimators |
-| `04_estimation` | `04b_stability.ipynb` | Stability checks: leaf size, ten seeds, calibration |
+| `04_estimation` | `04b_stability.ipynb` | Stability checks: leaf size, seeds (five for the corpus estimate), calibration |
 | `05_evaluation` | `05_explainability.ipynb` | Explainability and heterogeneity analysis |
 | `05_evaluation` | `05b_refutation.ipynb` | Refutation tests and sensitivity analysis |
 | `05_evaluation` | `05c_figures.ipynb` | Figures |
@@ -29,12 +29,12 @@ The release covers 22 module-presentations. The analysis uses nineteen of them. 
 2. Put the OULAD files in `raw/`.
 3. Run the notebooks in numeric order, from the repository root or any folder inside it. Each notebook finds the root by looking for `raw/`, and writes derived files there.
 
-Runtimes are long for the stability and refutation notebooks, because they refit the forest many times. Results are reported over ten seeds.
+Runtimes are long for the stability and refutation notebooks, because they refit the forest many times. The corpus estimate is reported over five seeds (42, 1, 7, 123, 2024). Course estimates are reported over four seeds (42, 1, 7, 123), in `04_estimation.ipynb`.
 
 ## Notes
 
 - Course CCC cannot be resolved at its enrolment. No computation repairs this, and extra seeds do not narrow its interval.
-- Sensitivity to unmeasured confounding is reported on the partial-correlation scale.
+- Sensitivity to unmeasured confounding is reported in standard-deviation units of treatment and outcome.
 
 ## Licence
 
