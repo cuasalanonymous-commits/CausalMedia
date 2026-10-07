@@ -1,4 +1,4 @@
-# Causal
+# CausalMedia
 
 Code for an anonymous manuscript under review. The study estimates heterogeneous effects of structured-content engagement on attainment in distance higher education, using a causal forest, and tests the estimator against a benchmark with known ground truth.
 
