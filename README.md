@@ -14,6 +14,7 @@ Code for an anonymous manuscript under review. The study estimates heterogeneous
 | `05_evaluation` | `05_explainability.ipynb` | Explainability and heterogeneity analysis |
 | `05_evaluation` | `05b_refutation.ipynb` | Refutation tests and sensitivity analysis |
 | `05_evaluation` | `05c_figures.ipynb` | Figures |
+| `06_verification` | `06_reported_numbers.ipynb` | Reproduces the reported numbers that notebooks 01–05 do not print (Sections 4.5, 5.3–5.8, Table 6) and draws Figures 1–3 |
 
 ## Data
 
