@@ -12,4 +12,4 @@ raw/*
 repo_hygiene.py
 *.bak
 *.csv
-refutation_checkpoints/
+refutation_checkpoints/!01_corpus/outcome_tie_choices.csv
