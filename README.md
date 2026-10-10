@@ -39,4 +39,4 @@ Runtimes are long for the stability and refutation notebooks, because they refit
 
 ## Licence
 
-MIT. See `LICENSE`.
+MIT. See `LICENSE`.| `07_subgroups` | `07_subgroups_and_grouped_folds.ipynb` | Grouped-fold refits, Tables S1–S2, band test, outcome rebuild and tie checks |
