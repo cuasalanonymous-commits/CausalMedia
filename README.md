@@ -15,6 +15,8 @@ Code for an anonymous manuscript under review. The study estimates heterogeneous
 | `05_evaluation` | `05b_refutation.ipynb` | Refutation tests and sensitivity analysis |
 | `05_evaluation` | `05c_figures.ipynb` | Figures |
 | `06_verification` | `06_reported_numbers.ipynb` | Reproduces the reported numbers that notebooks 01–05 do not print (Sections 4.5, 5.3–5.8, Table 6) and draws Figures 1–3 |
+| `07_subgroups` | `07_subgroups_and_grouped_folds.ipynb` | Grouped-fold refits, Tables S1–S2, band test, outcome rebuild and tie checks |
+| `08_v3_reanalysis` | `08_v3_reanalysis.ipynb` | Five-seed course estimates (Tables 6, 7, S6), fold-internal preprocessing (Table 9), sensitivity benchmark against course identity, Table S5 |
 
 ## Data
 
@@ -30,13 +32,13 @@ The release covers 22 module-presentations. The analysis uses nineteen of them. 
 2. Put the OULAD files in `raw/`.
 3. Run the notebooks in numeric order, from the repository root or any folder inside it. Each notebook finds the root by looking for `raw/`, and writes derived files there.
 
-Runtimes are long for the stability and refutation notebooks, because they refit the forest many times. The corpus estimate is reported over five seeds (42, 1, 7, 123, 2024). Course estimates are reported over four seeds (42, 1, 7, 123), in `04_estimation.ipynb`.
+Runtimes are long for the stability and refutation notebooks, because they refit the forest many times. The corpus estimate is reported over five seeds (42, 1, 7, 123, 2024). Course estimates are reported over the same five seeds, in `08_v3_reanalysis.ipynb`, which supersedes the four-seed course values and the Table 6 check in `06_reported_numbers.ipynb`.
 
 ## Notes
 
 - Course CCC cannot be resolved at its enrolment. No computation repairs this, and extra seeds do not narrow its interval.
-- Sensitivity to unmeasured confounding is reported in standard-deviation units of treatment and outcome.
+- Sensitivity to unmeasured confounding is reported in standard-deviation units of treatment and outcome (notebook 05b), and as a fraction of the strength of course identity (notebook 08).
 
 ## Licence
 
-MIT. See `LICENSE`.| `07_subgroups` | `07_subgroups_and_grouped_folds.ipynb` | Grouped-fold refits, Tables S1�S2, band test, outcome rebuild and tie checks |
+MIT. See `LICENSE`.
